@@ -81,7 +81,7 @@ var searchThree = {
 				if (window.conversionBoxSearch.config.CSSURL) {
 					await searchThree.addLinkToHead(window.conversionBoxSearch.config.CSSURL)
 					if( window.conversionBoxSearch.config.APPURL ){
-						await searchThree.addLinkToHead(window.conversionBoxSearch.config.APPURL+"/api/css/autocomplete/"+searchThree.uniqueId)
+						searchThree.addLinkToHead(window.conversionBoxSearch.config.APPURL+"/api/css/autocomplete/"+searchThree.uniqueId)
 					}
 				}
 				searchThree.replaceSearchBar()
