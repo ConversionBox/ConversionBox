@@ -265,7 +265,7 @@ var roundViewInstantSearch = {
 			if (roundViewInstantSearch.cssURL) {
 				await roundViewInstantSearch.addLinkToHead(roundViewInstantSearch.cssURL)
 				if( roundViewInstantSearch.APPURL ){
-					await roundViewInstantSearch.addLinkToHead(roundViewInstantSearch.APPURL+"/api/css/instantsearch/"+roundViewInstantSearch.uniqueId)
+					roundViewInstantSearch.addLinkToHead(roundViewInstantSearch.APPURL+"/api/css/instantsearch/"+roundViewInstantSearch.uniqueId)
 				}
 			}
 			roundViewInstantSearch.instantSearchWrapSelector.innerHTML = ''
